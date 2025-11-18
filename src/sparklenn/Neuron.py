@@ -1,4 +1,4 @@
-from Value import Value
+from .Value import Value
 import random
 class Neuron:    
     def __init__(self, nin):
