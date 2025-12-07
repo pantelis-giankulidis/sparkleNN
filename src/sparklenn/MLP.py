@@ -1,4 +1,4 @@
-from .Layer import Layer
+from Layer import Layer
 class MLP:
     def __init__(self, nin, nouts):
         sz = [nin] + nouts
@@ -8,3 +8,9 @@ class MLP:
         for layer in self.layers:
             x = layer(x)
         return x
+    
+    def parameters(self):
+        params = []
+        for layer in self.layers:
+            params.extend(layer.parameters())
+        return params
