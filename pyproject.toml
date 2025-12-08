@@ -1,6 +1,6 @@
 [project]
 name = "sparklenn"
-version = "0.3.1"
+version = "0.3.2"
 description = ""
 authors = [
     {name = "pandelis-giankulidis",email = "pantelis.giankoulidis+1@gmail.com"}
