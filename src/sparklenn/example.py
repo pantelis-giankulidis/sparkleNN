@@ -1,4 +1,4 @@
-from MLP import MLP
+from .MLP import MLP
 
 mlp = MLP(3, [4, 4, 1])
 xs = [[2.0, -3.0, 10.0],
