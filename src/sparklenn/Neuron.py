@@ -6,7 +6,6 @@ class Neuron:
         self.b = Value(0.0)
 
     def __call__(self, x):
-        zip(self.w, x)
         act = sum((wi * xi for wi, xi in zip(self.w, x)), self.b)
         out = act.tanh()
         return out
